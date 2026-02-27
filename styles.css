@@ -1060,6 +1060,37 @@ body::after {
   .hero-right {
     order: -1;
   }
+
+  .nav {
+    flex-wrap: wrap;
+    padding: 16px 18px;
+    gap: 14px;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-title {
+    gap: 10px;
+  }
+
+  .avatar-hero {
+    width: 320px;
+    height: 320px;
+  }
+
+  .about-hero .portrait-wrap {
+    max-width: 70%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1068,11 +1099,64 @@ body::after {
   }
 
   .hero {
-    gap: 28px;
-    padding: 40px 6vw 50px;
+    gap: 24px;
+    padding: 32px 6vw 40px;
   }
 
   .portrait-orbit {
     width: min(230px, 80vw);
+  }
+
+  .hero-name {
+    font-size: 56px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    transform: none;
+  }
+
+  .hero-kicker {
+    font-size: 20px;
+  }
+
+  .hero-tagline {
+    font-size: 17px;
+  }
+
+  .btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .btn-ico {
+    width: 24px;
+    height: 24px;
+  }
+
+  .avatar-hero {
+    width: 260px;
+    height: 260px;
+  }
+
+  .story-card p {
+    font-size: 1.1rem;
+  }
+
+  .video-frame {
+    max-width: 100%;
+  }
+
+  .about-hero .lead {
+    font-size: 1.1rem;
+  }
+
+  .about-hero .portrait-wrap {
+    max-width: 90%;
+  }
+
+  .site-footer::before,
+  .site-footer::after {
+    width: 18%;
   }
 }
